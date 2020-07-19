@@ -1,66 +1,29 @@
-<nav class="scrollspy">
+<nav>
     <div class="container-fluid">
-        <div
-            class="fixed-top hidden-sm-down"
-            style="width: 120px; top: 200px; left: 88%;"
-        >
+        <div class="fixed-top hidden-sm-down" style="width: 120px; top: 200px; left: 88%;">
             <ul id="nav" class="nav flex-column text-right hidden-sm-down">
-                <li class="nav-item">
-                    <a
-                        class="nav-link btn-outline-info active"
-                        href="#Melissa-S-Langhausen-Front-end-web-designer"
-                    >
-                        <i class="fas fa-home"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-outline-info about" href="#about">
-                        <i class="fas fa-user-circle"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-outline-info" href="#skillset">
-                        <i class="fas fa-chart-line"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-outline-info" href="#portfolio">
-                        <i class="fas fa-images"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-outline-info" href="#reviews">
-                        <i class="far fa-eye"></i>
+                <li class="nav-item pb-2" *ngFor="let nav of navigation">
+                    <a class="nav-link btn-outline-info active" [routerLink]="nav.link">
+                        <mat-icon [ngClass]="nav.icon"></mat-icon>
                     </a>
                 </li>
             </ul>
         </div>
+        <mat-list role="list">
+            <mat-list-item *ngFor="let nav of navigation" [routerLink]="nav.link">outerLink]="nav.link"> </mat-list-item>
+        </mat-list>
 
-        <div class="row hidden-md-up">
+        <!-- <div class="row hidden-md-up">
             <div class="col-sm-12">
                 <nav class="nav fixed-top">
                     <div id="mySidenav" class="sidenav text-center">
-                        <a
-                            href="javascript:void(0)"
-                            class="closebtn"
-                            onclick="closeNav()"
-                            >&times;</a
-                        >
-                        <a
-                            href="#Melissa-S-Langhausen-Front-end-web-designer"
-                            onclick="closeNav()"
-                            >Home</a
-                        >
-                        <a class="about" href="#about" onclick="closeNav()"
-                            >About</a
-                        >
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#Melissa-S-Langhausen-Front-end-web-designer" onclick="closeNav()">Home</a>
+                        <a class="about" href="#about" onclick="closeNav()">About</a>
                         <a href="#skillset" onclick="closeNav()">Skillset</a>
                         <a href="#portfolio" onclick="closeNav()">Portfolio</a>
                         <a href="#reviews" onclick="closeNav()">Reviews</a>
-                        <ul
-                            class="navbar-text"
-                            style="margin: 0; margin-top: 50px; padding: 0;"
-                        >
+                        <ul class="navbar-text" style="margin: 0; margin-top: 50px; padding: 0;">
                             <hr style="border: 1px solid #fff;" />
                             <li class="list-inline-item">
                                 <a
@@ -95,18 +58,12 @@
                         </ul>
                     </div>
                     <span
-                        style="
-                            font-size: 35px;
-                            cursor: pointer;
-                            background: rgba(255, 255, 255, 0.8);
-                            padding: 0.3em;
-                            border-radius: 10px;
-                        "
+                        style="font-size: 35px; cursor: pointer; background: rgba(255, 255, 255, 0.8); padding: 0.3em; border-radius: 10px;"
                         onclick="openNav()"
                         >&#9776;</span
                     >
                 </nav>
             </div>
-        </div>
+        </div> -->
     </div>
 </nav>
