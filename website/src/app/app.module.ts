@@ -4,12 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModulesModule } from './modules/modules.module';
 import { ScrollSpyDirective } from './directives/scroll-spy.directive';
-
+import { SharedModule } from './modules/shared/shared.module';
 @NgModule({
     declarations: [AppComponent, ScrollSpyDirective],
-    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, ModulesModule],
+    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, SharedModule],
     providers: [],
     bootstrap: [AppComponent],
 })

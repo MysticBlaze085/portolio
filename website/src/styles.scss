@@ -13,6 +13,32 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+#Melissa-S-Langhausen-Front-end-web-designer {
+  background-image: url("./assets/img/home-office-336377_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #000;
+  border-radius: 0;
+  padding: 0;
+  min-height: 100%;
+
+  .container-fluid {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #5bc0de;
+    }
+  }
+}
+
 section h3 {
   border-top: 4px solid #5bc0de;
   padding-top: 10px;
