@@ -7,7 +7,7 @@
 {
   "files": [],
   "compilerOptions": {
-    "experimentalDecorators": true
+    "member-access": [true, "no-public"]
   },
   "references": [{
       "path": "./tsconfig.app.json"

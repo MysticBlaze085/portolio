@@ -1,36 +1,32 @@
-import { Directive, Input, Output, EventEmitter, ElementRef, HostListener } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 @Directive({
     selector: '[appScrollSpy]',
 })
 export class ScrollSpyDirective {
-    @Input() spiedTags = [];
-    @Output() sectionChange = new EventEmitter<string>();
+    @Input() public spiedTags = [];
+    @Output() public sectionChange = new EventEmitter<string>();
 
     private currentSection: string;
 
-    constructor(private _el: ElementRef) {}
+    constructor(private elementRef: ElementRef) {}
 
     @HostListener('scroll', ['$event'])
-    // tslint:disable-next-line:typedef
-    onScroll(event: any) {
+    public onScroll(event: any) {
         let currentSection: string;
-        const children = this._el.nativeElement.children;
+        const children = this.elementRef.nativeElement.children;
         const scrollTop = event.target.scrollTop;
         const parentOffset = event.target.offsetTop;
 
-        const getSpiedTags = children.filter((child) => {
-            console.log('spy', child);
-        });
-
-        for (let i = 0; i < children.length; i++) {
-            const element = children[i];
-            if (this.spiedTags.some((spiedTag) => spiedTag === element.tagName)) {
-                if (element.offsetTop - parentOffset <= scrollTop) {
-                    currentSection = element.id;
+        const spied = children.filter((child) => {
+            if (this.spiedTags.some((spiedTag) => spiedTag === child.tagName)) {
+                if (child.offsetTop - parentOffset <= scrollTop) {
+                    currentSection = child.id;
                 }
             }
-        }
+        });
+
+        console.log('spy', spied);
 
         if (currentSection !== this.currentSection) {
             this.currentSection = currentSection;
