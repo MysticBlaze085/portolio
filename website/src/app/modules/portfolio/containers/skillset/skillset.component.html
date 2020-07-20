@@ -1,49 +1,21 @@
 <section id="skillset">
-    <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="container-fluid">
         <div class="container">
+            <app-section-title [title]="sectionTitleConfig['title']"></app-section-title>
             <div class="row">
-                <div class="col-md-2 offset-md-5 col-lg-3 offset-lg-4">
-                    <h3 class="text-center">Skillset</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 offset-md-4 col-lg-4 offset-lg-0 text-center text-md-left">
-                            <h4>Design Skills</h4>
-                            <ul class="list-unstyled">
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-4 text-center text-md-left">
-                            <h4>Development Skills</h4>
-                            <ul class="list-unstyled">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>SASS</li>
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                                <li>Material Design</li>
-                                <li>Angular 6+</li>
-                                <li>MEAN stack</li>
-                                <li>
-                                    MySQL | SQL | DB2 | MongoDB | AWS | Firebase
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12 col-md-2 offset-md-8 col-lg-4 offset-lg-0 text-center text-md-left">
-                            <h4>Personal Skills</h4>
-                            <ul class="list-unstyled">
-                                <li>Basketball</li>
-                                <li>Gaming</li>
-                                <li>Martial Arts</li>
-                                <li>Snoozing</li>
-                                <li>Studying</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col pb-4">
+                    <mat-horizontal-stepper [linear]="isLinear" #stepper class="m-auto">
+                        <ng-container *ngFor="let skills of skillsetData">
+                            <mat-step>
+                                <div class="h-100 w-100 d-flex flex-column align-items-center">
+                                    <ng-template matStepLabel>{{ skills.title }}</ng-template>
+                                    <mat-list class="list-unstyled text-dark" *ngFor="let item of skills.items">
+                                        <mat-list-item>{{ item }}</mat-list-item>
+                                    </mat-list>
+                                </div>
+                            </mat-step>
+                        </ng-container>
+                    </mat-horizontal-stepper>
                 </div>
             </div>
         </div>

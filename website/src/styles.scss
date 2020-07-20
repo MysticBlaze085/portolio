@@ -19,7 +19,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: #f1f1f1;
-  text-shadow: 2px 2px 2px #000;
   border-radius: 0;
   padding: 0;
   min-height: 100%;
@@ -49,7 +48,6 @@ body {
 
   .container-fluid {
     background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: 1px 1px 1px #000;
     z-index: 1;
   }
 
@@ -58,7 +56,10 @@ body {
   }
 
   h4 {
+    margin-bottom: 0px;
+    font-size: 1.2rem;
     color: #5bc0de;
+    border-bottom: 1px solid #5bc0de;
   }
 
   ul {
@@ -78,8 +79,7 @@ body {
 
 #reviews h3 {
   color: #f1f1f1;
-  margin-top: 100px;
-  text-shadow: 2px 2px 2px #000;
+  margin-top: 100px
 }
 
 #reviews .container-fluid {
@@ -193,7 +193,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: #f1f1f1;
-  text-shadow: 2px 2px 2px #000;
   border-radius: 0;
   padding: 0;
 }
@@ -203,4 +202,10 @@ section h3 {
   padding-top: 10px;
   margin-bottom: 40px;
   font-size: 1.5rem !important;
+}
+
+.mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: #5bc0de !important;
 }
