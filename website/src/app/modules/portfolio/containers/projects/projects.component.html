@@ -1,6 +1,16 @@
-<section id="portfolio" class="d-flex flex-column justify-content-center h-100">
+<section id="projects" class="d-flex flex-column justify-content-center h-100">
     <div class="container">
         <app-section-title [title]="sectionTitleConfig['title']" [class]="sectionTitleConfig['class']"></app-section-title>
+        <div class="row">
+            <div class="col">
+                <mat-tab-group mat-align-tabs="center" class="text-dark">
+                    <mat-tab label="Angular"> </mat-tab>
+                    <mat-tab label="Web Projects">Content 2</mat-tab>
+                    <mat-tab label="WIP">Content 3</mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+        <!-- <app-section-title [title]="sectionTitleConfig['title']" [class]="sectionTitleConfig['class']"></app-section-title>
 
         <div class="row">
             <div class="col d-flex flec-row justify-content-center">
@@ -35,6 +45,6 @@
                     <h3 class="display-4 text">All Blue Solutions</h3>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
