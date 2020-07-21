@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <div class="fixed-top hidden-sm-down right-navigation">
             <mat-list id="nav" class="nav flex-column text-right hidden-sm-down" role="list">
-                <mat-list-item *ngFor="let nav of navigation" class="mb-2" [routerLink]="nav.link">
-                    <button mat-mini-fab color="'accent'" class="m-auto p-auto">
+                <mat-list-item *ngFor="let nav of navigation" class="mb-2">
+                    <button mat-mini-fab color="'accent'" class="m-auto p-auto" (click)="onClickRoute(nav.link)">
                         <mat-icon [ngClass]="nav.icon"></mat-icon>
                     </button>
                 </mat-list-item>

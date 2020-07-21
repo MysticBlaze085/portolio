@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Route } from '@angular/compiler/src/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     selector: 'app-navigation',
@@ -6,15 +8,13 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
-    navigation: { link: string; icon: string }[] = [
-        { link: 'Melissa-S-Langhausen-Front-end-web-designer', icon: 'fas fa-home' },
-        { link: 'about', icon: 'fas fa-user-circle' },
-        { link: 'skillSet', icon: 'fas fa-chart-line' },
-        { link: 'portfolio', icon: 'fas fa-images' },
-        { link: 'reviews', icon: 'far fa-eye' },
-    ];
+    @Input() navigation: { link: string; icon: string }[];
 
-    constructor() {}
+    constructor(private route: Router) {}
 
     ngOnInit(): void {}
+
+    onClickRoute(route: string) {
+        this.route.navigate([route]);
+    }
 }
