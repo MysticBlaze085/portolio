@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ISectionTitleConfig } from 'src/app/interfaces/section-title.interface';
+import { ProjectData } from './projects.config';
 
 @Component({
     selector: 'app-projects',
@@ -8,6 +9,7 @@ import { ISectionTitleConfig } from 'src/app/interfaces/section-title.interface'
 })
 export class ProjectsComponent implements OnInit {
     sectionTitleConfig: ISectionTitleConfig = { title: 'Portfolio', class: 'text-dark' };
+    projectData: { srcUrl: string; previewUrl: string }[] = ProjectData;
 
     constructor() {}
 

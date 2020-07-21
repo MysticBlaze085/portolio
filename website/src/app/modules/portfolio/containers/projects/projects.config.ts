@@ -1,7 +1,7 @@
 export const ProjectData = [
     {
-        srcUrl: 'https://preview.ibb.co/jrsA6R/img12.jpg',
-        previewUrl: 'https://preview.ibb.co/jrsA6R/img12.jpg',
+        srcUrl: 'http://langhausenenterprises.com/',
+        previewUrl: 'assets/img/music-box-1419792_1280.jpg',
     },
     {
         srcUrl: 'https://preview.ibb.co/kPE1D6/clouds.jpg',
