@@ -13,4 +13,10 @@ export const ProjectData: IProject[] = [
         image: 'assets/img/blue.png',
         tooltip: 'All Blue Solutions',
     },
+    {
+        type: 'angular',
+        url: 'https://mysticblaze085.github.io/interview-dashboard/dashboard',
+        image: 'assets/img/simpledashboard.png',
+        tooltip: 'Simple Dashobard Config',
+    },
 ];

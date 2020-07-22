@@ -1,5 +1,5 @@
 <ng-container class="pb-1" *ngFor="let card of cardData">
-    <a [href]="card.url" [matTooltip]="card.tooltip" [matTooltipPosition]="'above'">
+    <a class="ml-2" [href]="card.url" [matTooltip]="card.tooltip" [matTooltipPosition]="'above'">
         <img class="image-card mr-" [src]="card.image" />
     </a>
 </ng-container>
