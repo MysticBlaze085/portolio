@@ -1,7 +1,9 @@
-<div class="container">
-    <div class="col-2">
-        <mat-card class="example-card">
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu" />
-        </mat-card>
+<div class="container mt-5 mb-5" *ngIf="cardData.length">
+    <div class="col d-flex flex-row justify-content-center n">
+        <ng-container class="pb-1" *ngFor="let card of cardData">
+            <a [href]="card.url" [matTooltip]="card.tooltip" [matTooltipPosition]="'above'">
+                <img class="image-card" [src]="card.image" />
+            </a>
+        </ng-container>
     </div>
 </div>

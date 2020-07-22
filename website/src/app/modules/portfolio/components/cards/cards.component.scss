@@ -1,0 +1,15 @@
+@mixin image-sizing {
+  height: 200px;
+  width: 250px;
+}
+
+.image-card {
+  @include image-sizing;
+  padding: 0px;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 5px 5px 5px #333333;
+    margin-right: 5px;
+  }
+}

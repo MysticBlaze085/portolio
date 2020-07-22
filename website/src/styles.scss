@@ -15,6 +15,11 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
+// organize and separate out into componet scss files
 #Melissa-S-Langhausen-Front-end-web-designer {
   background-image: url("./assets/img/home-office-336377_1920.jpg");
   background-size: cover;

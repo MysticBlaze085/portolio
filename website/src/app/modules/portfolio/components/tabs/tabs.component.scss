@@ -1,0 +1,20 @@
+:host ::ng-deep .mat-tab-group {
+  height: 300px !important;
+}
+
+:host ::ng-deep .mat-tab-label {
+  height: 3rem !important;
+  min-width: 8rem !important;
+  color: #333333;
+}
+
+/* Styles for the active tab label */
+:host ::ng-deep .mat-tab-label.mat-tab-label-active {
+  border-bottom: 2px solid #5bc0de;
+  box-sizing: border-box;
+}
+
+/* Styles for the ink bar */
+:host ::ng-deep .mat-ink-bar {
+  display: none !important;
+}

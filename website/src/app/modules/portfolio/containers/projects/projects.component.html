@@ -1,15 +1,9 @@
-<section id="projects" class="d-flex flex-column justify-content-center h-100">
-    <div class="container">
+<section id="projects" class="h-100">
+    <div class="container h-100 d-flex flex-column justify-content-center">
         <app-section-title [title]="sectionTitleConfig['title']" [class]="sectionTitleConfig['class']"></app-section-title>
         <div class="row">
             <div class="col">
-                <mat-tab-group mat-align-tabs="center" class="text-dark">
-                    <mat-tab label="Angular">
-                        <!-- <app-cards></app-cards> -->
-                    </mat-tab>
-                    <mat-tab label="Web Projects">Content 2</mat-tab>
-                    <mat-tab label="WIP">Content 3</mat-tab>
-                </mat-tab-group>
+                <app-tabs></app-tabs>
             </div>
         </div>
         <!-- <app-section-title [title]="sectionTitleConfig['title']" [class]="sectionTitleConfig['class']"></app-section-title>
