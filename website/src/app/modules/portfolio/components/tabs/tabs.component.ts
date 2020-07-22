@@ -17,8 +17,6 @@ export class TabsComponent implements OnInit {
 
     ngOnInit(): void {
         this.setData(this.tabData);
-
-        console.log('ang', this.angularProjects);
     }
 
     setData(data: IProject[]) {
