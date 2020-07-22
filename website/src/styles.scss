@@ -19,6 +19,11 @@ body {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none !important;
+  outline: none !important;
+}
+
 // organize and separate out into componet scss files
 #Melissa-S-Langhausen-Front-end-web-designer {
   background-image: url("./assets/img/home-office-336377_1920.jpg");
