@@ -3,44 +3,8 @@
         <app-section-title [title]="sectionTitleConfig['title']" [class]="sectionTitleConfig['class']"></app-section-title>
         <div class="row">
             <div class="col">
-                <app-tabs></app-tabs>
+                <app-tabs [tabData]="projectData"></app-tabs>
             </div>
         </div>
-        <!-- <app-section-title [title]="sectionTitleConfig['title']" [class]="sectionTitleConfig['class']"></app-section-title>
-
-        <div class="row">
-            <div class="col d-flex flec-row justify-content-center">
-                <button class="btn btn-primary filter-button mr-1" data-filter="all">
-                    All
-                </button>
-                <button class="btn btn-primary filter-button mr-1" data-filter="websites">
-                    Application & Websites
-                </button>
-                <button class="btn btn-primary filter-button mr-1" data-filter="projects">
-                    WIP Projects
-                </button>
-            </div>
-        </div>
-        <br />
-        <div class="p-2 mr-1 d-flex flex-wrap flex-row justify-content-center">
-            <div class="gallery_product one col-lg-3 col-md-3 col-sm-3 col-xs-6 filter websites align-self-center">
-                <div id="floated_img" class="one">
-                    <a href="http://langhausenenterprises.com/" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-                        <img src="assets/img/music-box-1419792_1280.jpg" class="top img-fluid img-responsive rounded"
-                    /></a>
-
-                    <h3 class="display-4 text">Langhausen Enterprises</h3>
-                </div>
-            </div>
-            <div class="gallery_product four col-lg-3 col-md-3 col-sm-3 col-xs-6 filter websites align-self-center">
-                <div id="floated_img" class="four">
-                    <a href="https://www.allbluesolutions.com" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
-                        <img src="assets/img/blue.png" class="top img-fluid img-responsive rounded"
-                    /></a>
-
-                    <h3 class="display-4 text">All Blue Solutions</h3>
-                </div>
-            </div>
-        </div> -->
     </div>
 </section>

@@ -1,18 +1,16 @@
-export const ProjectData = [
+import { IProject } from '../../../../interfaces/projects.interface';
+
+export const ProjectData: IProject[] = [
     {
-        srcUrl: 'http://langhausenenterprises.com/',
-        previewUrl: 'assets/img/music-box-1419792_1280.jpg',
+        type: 'angular',
+        url: 'http://langhausenenterprises.com/',
+        image: 'assets/img/music-box-1419792_1280.jpg',
+        tooltip: 'Langhausen Enterprises',
     },
     {
-        srcUrl: 'https://preview.ibb.co/kPE1D6/clouds.jpg',
-        previewUrl: 'https://preview.ibb.co/kPE1D6/clouds.jpg',
-    },
-    {
-        srcUrl: 'https://preview.ibb.co/mwsA6R/img7.jpg',
-        previewUrl: 'https://preview.ibb.co/mwsA6R/img7.jpg',
-    },
-    {
-        srcUrl: 'https://preview.ibb.co/kZGsLm/img8.jpg',
-        previewUrl: 'https://preview.ibb.co/kZGsLm/img8.jpg',
+        type: 'web',
+        url: 'https://www.allbluesolutions.com',
+        image: 'assets/img/blue.png',
+        tooltip: 'All Blue Solutions',
     },
 ];
