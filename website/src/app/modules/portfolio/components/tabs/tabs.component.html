@@ -1,6 +1,10 @@
 <mat-tab-group mat-align-tabs="center" class="text-dark">
-    <mat-tab label="Angular" class="m-4">
-        <app-cards [cardData]="angularProjects"></app-cards>
+    <mat-tab label="Angular" class="m-4" *ngIf="angularProjects.length">
+        <div class="container mt-5 mb-5">
+            <div class="col d-flex flex-row justify-content-center h-100">
+                <app-cards [cardData]="angularProjects"></app-cards>
+            </div>
+        </div>
     </mat-tab>
     <mat-tab label="Web Projects">
         <app-cards [cardData]="webProjects"></app-cards>

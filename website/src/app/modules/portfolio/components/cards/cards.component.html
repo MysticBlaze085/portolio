@@ -1,9 +1,5 @@
-<div class="container mt-5 mb-5" *ngIf="cardData.length">
-    <div class="col d-flex flex-row justify-content-center n">
-        <ng-container class="pb-1" *ngFor="let card of cardData">
-            <a [href]="card.url" [matTooltip]="card.tooltip" [matTooltipPosition]="'above'">
-                <img class="image-card mr-" [src]="card.image" />
-            </a>
-        </ng-container>
-    </div>
-</div>
+<ng-container class="pb-1" *ngFor="let card of cardData">
+    <a [href]="card.url" [matTooltip]="card.tooltip" [matTooltipPosition]="'above'">
+        <img class="image-card mr-" [src]="card.image" />
+    </a>
+</ng-container>
