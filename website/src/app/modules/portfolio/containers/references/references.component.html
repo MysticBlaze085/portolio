@@ -1,70 +1,25 @@
-<section id="reviews">
+<section id="reviews" *ngIf="referencesData">
     <div class="container-fluid">
-        <div class="container d-flex flex-column justify-content-center align-content-center h-100">
-            <div class="row">
-                <div class="col-md-2 offset-md-5 col-lg-3 offset-lg-4">
-                    <h3 class="text-center" style="margin: 1.7em 0 1em 0;">
-                        Reviews
-                    </h3>
-                </div>
-            </div>
-            <div class="row reviews">
-                <div class="col-sm-12 col-md-12 col-lg-11">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item">
-                                <div class="reviews">
-                                    <div class="pic">
-                                        <img src="https://placeimg.com/40/40/tech" alt="" />
-                                    </div>
-
-                                    <p class="description lead">
-                                        Melissa came to Verdant ready to learn. She worked hard and made herself a valuable part of our UI
-                                        team as she continually learned and grew in her Angular and Typescript expertise. Her eagerness to
-                                        contribute was obvious from day one and it didn't wane over time. Any UI team would be lucky to have
-                                        her.
-                                    </p>
-                                    <div class="reviews-prof">
-                                        <span class="title">Frederick Kuhne</span>
-                                        <small>
-                                            <a href="http://verdantservices.com" style="color: grey; text-decoration: none;"
-                                                >Verdant Services</a
-                                            >
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <div class="reviews">
-                                    <div class="pic">
-                                        <img src="https://placeimg.com/40/40/arch" alt="" />
-                                    </div>
-
-                                    <p class="description lead">
-                                        Melissa did an excellent website design for my business that has customers emailing me every day! I
-                                        used to get an inquiry email once in a week to ten days. I now receive one or two each day! Wow! I
-                                        have an extremely talented daughter that puts her heart in to her projects! Thanks Melissa!
-                                    </p>
-                                    <div class="reviews-prof">
-                                        <span class="title">Terry Langhausen</span>
-                                        <small>
-                                            <a href="http://langhausenenterprises.com/" style="color: grey; text-decoration: none;"
-                                                >Langhausen Enterprises</a
-                                            >
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="container d-flex flex-column justify-content-center h-100">
+            <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
+                <ng-template ngbSlide *ngFor="let ref of referencesData">
+                    <div class="container reviews w-75 d-flex flex-column align-content-center">
+                        <div class="pic">
+                            <img [src]="ref.image" />
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="sr-only">Next</span>
-                        </a>
+
+                        <p class="description lead">
+                            {{ ref.description }}
+                        </p>
+                        <div class="reviews-prof">
+                            <span class="title">{{ ref.author }}</span>
+                            <small>
+                                <a [href]="ref.link" style="color: grey; text-decoration: none;">{{ ref.linkText }}</a>
+                            </small>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </ng-template>
+            </ngb-carousel>
         </div>
     </div>
 </section>

@@ -81,7 +81,7 @@ button:focus {
 
 #reviews {
   background-image: url("./assets/img/ipad-605420.jpg");
-  height: 620px;
+  height: 100%;
   max-width: 100%;
   background-position: center;
   background-size: cover;
@@ -95,12 +95,8 @@ button:focus {
 }
 
 #reviews .container-fluid {
-  height: 620px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-#reviews {
-  margin-top: 80px;
 }
 
 .reviews {
