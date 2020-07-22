@@ -1,7 +1,7 @@
 <section id="reviews" *ngIf="referencesData">
     <div class="container-fluid">
         <div class="container d-flex flex-column justify-content-center h-100">
-            <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
+            <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false" style="outline: none;">
                 <ng-template ngbSlide *ngFor="let ref of referencesData">
                     <div class="container reviews w-75 d-flex flex-column align-content-center">
                         <div class="pic">
