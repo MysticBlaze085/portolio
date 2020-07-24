@@ -1,12 +1,18 @@
 @mixin image-sizing {
-  height: 200px;
+  height: 100%;
   width: 250px;
 }
 
 .image-card {
   @include image-sizing;
-  padding: 0px;
   border-radius: 5px;
+  padding: 5px;
+  min-height: 250px;
+
+  img {
+    height: 100px;
+    width: 150px;
+  }
 
   &:hover {
     box-shadow: 5px 5px 5px #333333;

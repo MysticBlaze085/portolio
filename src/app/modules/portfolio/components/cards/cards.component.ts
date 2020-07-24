@@ -7,14 +7,7 @@ import { IProject } from '../../../../interfaces/projects.interface';
     styleUrls: ['./cards.component.scss'],
 })
 export class CardsComponent implements OnInit {
-    @Input() cardData: IProject[] = [
-        {
-            type: 'angular',
-            image: 'assets/img/music-box-1419792_1280.jpg',
-            url: 'https://langhausenenterprises.com/',
-            tooltip: 'Langhausen Enterprises',
-        },
-    ];
+    @Input() cardData: IProject[];
 
     constructor() {}
 
