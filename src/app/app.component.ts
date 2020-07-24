@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { INavigation } from './interfaces/navigation.interface';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -6,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
     currentSection = 'section1';
-    navigation: { link: string; icon: string }[] = [
-        { link: '/portfolio', icon: 'fas fa-home' },
-        { link: '/portfolio/about', icon: 'fas fa-user-circle' },
-        { link: '/portfolio/skillset', icon: 'fas fa-chart-line' },
-        { link: '/portfolio/projects', icon: 'fas fa-images' },
-        { link: '/portfolio/reviews', icon: 'far fa-eye' },
+    navigation: INavigation[] = [
+        { link: '/portfolio', icon: 'fas fa-home', name: 'Portfolio' },
+        { link: '/portfolio/about', icon: 'fas fa-user-circle', name: 'About' },
+        { link: '/portfolio/skillset', icon: 'fas fa-chart-line', name: 'Skillset' },
+        { link: '/portfolio/projects', icon: 'fas fa-images', name: 'Projects'},
+        { link: '/portfolio/reviews', icon: 'far fa-eye', name: 'References' },
     ];
 
     onSectionChange(sectionId: string) {

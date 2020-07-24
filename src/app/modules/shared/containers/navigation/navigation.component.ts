@@ -1,14 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Route } from '@angular/compiler/src/core';
-import { ActivatedRoute, Router } from '@angular/router';
-
+import { Router } from '@angular/router';
+import { INavigation } from '../../../../interfaces/navigation.interface';
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
     styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
-    @Input() navigation: { link: string; icon: string }[];
+    @Input() navigation: INavigation[];
 
     constructor(private route: Router) {}
 
