@@ -23,7 +23,7 @@ export const ProjectData: IProject[] = [
         image: 'assets/img/simpledashboard.png',
         tooltip: 'Simple Dashobard Config',
         description: 'Built with Angular, fusion chart and a basic api call to show a simple dashboard.',
-        github: 'hhttps://github.com/MysticBlaze085/interview-dashboard'
+        github: 'https://github.com/MysticBlaze085/interview-dashboard'
     },
     {
         type: 'wip',
