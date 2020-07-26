@@ -7,7 +7,7 @@ import { ISectionTitleConfig } from 'src/app/interfaces/section-title.interface'
     styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-    sectionTitleConfig: ISectionTitleConfig = { title: 'About', class: 'text-dark' };
+    sectionTitleConfig: ISectionTitleConfig = { title: 'About', class: 'text-white' };
     @Output() selectChanges: EventEmitter<any> = new EventEmitter();
 
     constructor() {}

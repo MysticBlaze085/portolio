@@ -1,11 +1,10 @@
 :host ::ng-deep .mat-tab-group {
-  height: 100% !important;
+  max-height: 700px;
 }
 
 :host ::ng-deep .mat-tab-label {
   height: 3rem !important;
-  min-width: 8rem !important;
-  color: #333333;
+  min-width: 3rem !important;
 }
 
 /* Styles for the active tab label */

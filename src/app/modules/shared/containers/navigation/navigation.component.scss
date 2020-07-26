@@ -1,37 +1,7 @@
-.right-navigation {
-  top: 200px;
-  left: auto;
-}
-
-.mobile-nav {
-  opacity: 0;
-}
-
-@media only screen and (max-width: 479px) {
-  .right-navigation {
-    display: none;
-  }
-
-  .mobile-nav {
-    opacity: 100;
-  }
-
-  #footer {
-    height: 60px;
-    background-color: #f5f5f5;
-  }
-
-  #bottomNav {
-    padding: 10px;
-  }
-
-  #bottomNav a {
-    font-size: 24pt;
-    color: #ddd;
-    text-decoration: none;
-  }
-
-  #bottomNav a:hover {
-    color: #fff;
-  }
+.portfolio-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

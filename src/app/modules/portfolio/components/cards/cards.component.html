@@ -6,11 +6,11 @@
                     <img [src]="card.image" />
                 </a>
                 <mat-card-content>
-                    <p>
-                        {{card.description}}
+                    <p class="mt-2">
+                        {{ card.description }}
                     </p>
                 </mat-card-content>
-                <mat-card-actions *ngIf="card.github ? true : false">
+                <mat-card-actions *ngIf="card.github ? true : false" class="mt-auto">
                     <a mat-raised-button [href]="card.github" class="nav-link text-white mb-2">Git Hub project File</a>
                 </mat-card-actions>
             </mat-card>

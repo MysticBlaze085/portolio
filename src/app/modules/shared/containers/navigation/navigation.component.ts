@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { INavigation } from '../../../../interfaces/navigation.interface';
 @Component({
@@ -9,6 +9,7 @@ import { INavigation } from '../../../../interfaces/navigation.interface';
 export class NavigationComponent implements OnInit {
     @Input() navigation: INavigation[];
     expand: boolean;
+    @ViewChild('sidenav', { static: true }) sidenav;
 
     constructor(private route: Router) {}
 
@@ -16,6 +17,7 @@ export class NavigationComponent implements OnInit {
 
     onClickRoute(route: string) {
         this.route.navigate([route]);
+        this.sidenav.toggle();
     }
 
     onToggle() {

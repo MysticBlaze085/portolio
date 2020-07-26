@@ -9,7 +9,7 @@ import { SkillsetConfig } from './skillset.config';
     styleUrls: ['./skillset.component.scss'],
 })
 export class SkillsetComponent implements OnInit {
-    sectionTitleConfig: ISectionTitleConfig = { title: 'Skillset' };
+    sectionTitleConfig: ISectionTitleConfig = { title: 'Skillset', class: 'text-white' };
     skillsetData: { title: string; items: string[] }[] = SkillsetConfig;
     isLinear = false;
     firstFormGroup: FormGroup;

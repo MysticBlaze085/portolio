@@ -9,7 +9,7 @@ import { IProject } from '../../../../interfaces/projects.interface';
     styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-    sectionTitleConfig: ISectionTitleConfig = { title: 'Portfolio', class: 'text-dark' };
+    sectionTitleConfig: ISectionTitleConfig = { title: 'Portfolio', class: 'text-white' };
     projectData: IProject[] = ProjectData;
 
     constructor() {}
