@@ -9,7 +9,6 @@ import { INavigation } from '../../../../interfaces/navigation.interface';
 export class NavigationComponent implements OnInit {
     @Input() navigation: INavigation[];
     expand: boolean;
-    @ViewChild('sidenav', { static: true }) sidenav;
 
     constructor(private route: Router) {}
 
@@ -17,7 +16,6 @@ export class NavigationComponent implements OnInit {
 
     onClickRoute(route: string) {
         this.route.navigate([route]);
-        this.sidenav.toggle();
     }
 
     onToggle() {
