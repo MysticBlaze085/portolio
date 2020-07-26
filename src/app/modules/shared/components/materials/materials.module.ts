@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { A11yModule } from '@angular/cdk/a11y';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 import { PortalModule } from '@angular/cdk/portal';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { CdkStepperModule } from '@angular/cdk/stepper';
@@ -35,17 +36,19 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
-import { MatTableModule, MatTableDataSource } from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
     declarations: [],
     exports: [
         A11yModule,
+        ClipboardModule,
         CdkStepperModule,
         CdkTableModule,
         CdkTreeModule,
@@ -68,7 +71,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         MatInputModule,
         MatListModule,
         MatMenuModule,
-        MatFormFieldModule,
         MatNativeDateModule,
         MatPaginatorModule,
         MatProgressBarModule,
@@ -86,10 +88,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         MatToolbarModule,
         MatTooltipModule,
         MatTreeModule,
+        OverlayModule,
         PortalModule,
         ScrollingModule,
         MatFormFieldModule,
-        MatInputModule,
     ],
 })
 export class MaterialsModule {}
