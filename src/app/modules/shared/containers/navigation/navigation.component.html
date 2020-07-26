@@ -16,8 +16,14 @@
             </button>
         </mat-list-item>
         <mat-list-item>
-            <button class="w-100" mat-button (click)="onToggle()">
-                <mat-icon>keyboard_arrow_right</mat-icon>
+            <button
+                class="w-100"
+                mat-button
+                (click)="onToggle()"
+                [matTooltipPosition]="'right'"
+                [matTooltip]="!expand ? 'Expand' : 'Collapse'"
+            >
+                <mat-icon>{{ !expand ? 'keyboard_arrow_right' : 'keyboard_arrow_left' }}</mat-icon>
             </button>
         </mat-list-item>
     </mat-sidenav>
