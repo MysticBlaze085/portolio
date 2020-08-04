@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollSpyDirective } from './directives/scroll-spy.directive';
 import { SharedModule } from './modules/shared/shared.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialsModule } from './modules/shared';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -18,7 +17,6 @@ import { ReactiveFormsModule } from '@angular/forms';
         AppRoutingModule,
         BrowserAnimationsModule,
         SharedModule,
-        NgbModule,
         MaterialsModule,
         MatNativeDateModule,
         ReactiveFormsModule,

@@ -10,6 +10,14 @@ export const ProjectData: IProject[] = [
         github: 'https://github.com/MysticBlaze085/comLE',
     },
     {
+        type: 'angular',
+        url: 'https://www.bluemsp.com/melissa/ngDesk-Marketing/',
+        image: 'assets/img/desk.png',
+        tooltip: 'ngDesk',
+        description: 'Website for cloud-based customer service support software.',
+        github: null,
+    },
+    {
         type: 'web',
         url: 'https://www.allbluesolutions.com',
         image: 'assets/img/blue.png',
@@ -36,10 +44,10 @@ export const ProjectData: IProject[] = [
     },
     {
         type: 'angular',
-        url: 'https://www.bluemsp.com/melissa/ngDesk-Marketing/',
-        image: 'assets/img/desk.png',
-        tooltip: 'ngDesk',
-        description: 'Website for cloud-based customer service support software.',
-        github: null,
+        url: 'https://mysticblaze085.github.io/training-tut/welcome/login/signup',
+        image: 'assets/img/dynamic-form-testing.png',
+        tooltip: 'Training Tut',
+        description: 'Training Tut with Angular, NodeJS and Firebase with a Dynamic Form Builder.',
+        github: 'https://github.com/MysticBlaze085/training-tut',
     },
 ];
