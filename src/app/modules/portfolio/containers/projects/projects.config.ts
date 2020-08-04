@@ -43,7 +43,7 @@ export const ProjectData: IProject[] = [
         github: 'https://github.com/MysticBlaze085/portolio',
     },
     {
-        type: 'angular',
+        type: 'wip',
         url: 'https://mysticblaze085.github.io/training-tut',
         image: 'assets/img/dynamic-form-testing.png',
         tooltip: 'Training Tut',
