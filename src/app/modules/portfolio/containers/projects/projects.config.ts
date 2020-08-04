@@ -44,7 +44,7 @@ export const ProjectData: IProject[] = [
     },
     {
         type: 'angular',
-        url: 'https://mysticblaze085.github.io/training-tut/welcome/login/signup',
+        url: 'https://mysticblaze085.github.io/training-tut',
         image: 'assets/img/dynamic-form-testing.png',
         tooltip: 'Training Tut',
         description: 'Training Tut with Angular, NodeJS and Firebase with a Dynamic Form Builder.',
