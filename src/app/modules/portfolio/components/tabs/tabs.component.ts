@@ -12,6 +12,7 @@ export class TabsComponent implements OnInit {
     angularProjects: IProject[];
     webProjects: IProject[];
     wipProjects: IProject[];
+    currentWIP: IProject[];
 
     constructor() {}
 
@@ -23,6 +24,6 @@ export class TabsComponent implements OnInit {
         this.angularProjects = data.filter((project) => project.type.includes('angular'));
         this.webProjects = data.filter((project) => project.type.includes('web'));
         this.wipProjects = data.filter((project) => project.type.includes('wip'));
-        
+        this.currentWIP = data.filter((project) => project.type.includes('current'));
     }
 }

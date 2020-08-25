@@ -44,18 +44,18 @@ export const ProjectData: IProject[] = [
     },
     {
         type: 'wip',
-        url: 'https://mysticblaze085.github.io/training-tut',
-        image: 'assets/img/dynamic-form-testing.png',
-        tooltip: 'Training Tut',
-        description: 'Training Tut with Angular, NodeJS and Firebase with a Dynamic Form Builder.',
-        github: 'https://github.com/MysticBlaze085/training-tut',
-    },
-    {
-        type: 'wip',
         url: 'https://mysticblaze085.github.io/freecodecamp-projects/',
         image: 'assets/img/projects.png',
         tooltip: 'Training Tut',
         description: 'Training Tut with Angular lib of projects from multiple tutorials sets.',
         github: 'https://github.com/MysticBlaze085/freecodecamp-projects',
+    },
+    {
+        type: 'current',
+        url: 'https://mysticblaze085.github.io/training-tut',
+        image: 'assets/img/dynamic-form-testing.png',
+        tooltip: 'Training Tut',
+        description: 'Training Tut with Angular, NodeJS and Firebase with a Dynamic Form Builder.',
+        github: 'https://github.com/MysticBlaze085/training-tut',
     },
 ];

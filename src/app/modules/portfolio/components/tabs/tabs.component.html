@@ -1,4 +1,7 @@
 <mat-tab-group mat-align-tabs="center" class="text-dark h-100">
+    <mat-tab label="Current WIP" class="m-4 h-100" *ngIf="currentWIP">
+        <app-cards [cardData]="currentWIP"></app-cards>
+    </mat-tab>
     <mat-tab label="Angular" class="m-4 h-100" *ngIf="angularProjects">
         <app-cards [cardData]="angularProjects"></app-cards>
     </mat-tab>
