@@ -52,6 +52,14 @@ export const ProjectData: IProject[] = [
     },
     {
         type: 'current',
+        url: 'https://mysticblaze085.github.io/react-basics/',
+        image: 'assets/img/basic-react-project.png',
+        tooltip: 'Basic React Project',
+        description: 'React starter project',
+        github: 'https://github.com/MysticBlaze085/react-basics',
+    },
+    {
+        type: 'current',
         url: 'https://mysticblaze085.github.io/training-tut',
         image: 'assets/img/dynamic-form-testing.png',
         tooltip: 'Training Tut',
