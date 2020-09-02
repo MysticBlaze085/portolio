@@ -5,6 +5,9 @@
     <mat-tab label="Angular" class="m-4 h-100" *ngIf="angularProjects">
         <app-cards [cardData]="angularProjects"></app-cards>
     </mat-tab>
+    <mat-tab label="React" class="m-4 h-100" *ngIf="reactProjects">
+        <app-cards [cardData]="reactProjects"></app-cards>
+    </mat-tab>
     <mat-tab label="Web Projects" *ngIf="webProjects">
         <app-cards [cardData]="webProjects"></app-cards>
     </mat-tab>

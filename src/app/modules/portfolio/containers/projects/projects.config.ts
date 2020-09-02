@@ -51,7 +51,7 @@ export const ProjectData: IProject[] = [
         github: 'https://github.com/MysticBlaze085/freecodecamp-projects',
     },
     {
-        type: 'current',
+        type: 'react',
         url: 'https://mysticblaze085.github.io/react-basics/',
         image: 'assets/img/basic-react-project.png',
         tooltip: 'Basic React Project',
